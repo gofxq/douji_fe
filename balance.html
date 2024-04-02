@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资产总览</title>
+    <!-- 引入 ECharts 库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.common.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <div class="charts-row">
+        <div class="chart-container" id="currency-bar-chart"> </div>
+        <div class="chart-container" id="balance-bar-chart"> </div>
+    </div>
+    <div id="brokers-container"></div>
+
+    <div>
+        <table id="details-table" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>货币</th>
+                    <th>余额</th>
+                    <th>CNY</th>
+                    <th>评论</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 行数据将在这里动态插入 -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <div>
+        <h2>人民币总额: <span id="total-balance">0</span></h2>
+    </div>
+    <script src="balance.js"></script>
+</body>
+
+</html>
